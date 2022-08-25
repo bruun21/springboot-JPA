@@ -66,6 +66,11 @@ public class OrderItem implements Serializable {
 	}
 
 	
+	public Double getSubTotal() { //por usar a versão Enterprise precisa colocar o get
+		return price * quantity;
+	}
+	
+	
 	@Override
 	public int hashCode() {
 		return Objects.hash(id);
